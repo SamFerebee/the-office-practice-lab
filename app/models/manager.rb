@@ -59,7 +59,7 @@ class Manager
     end
 
     def self.average_age
-        @@average_age = @@total_age / @@all.size
+        @@average_age = self.total_age / self.all.size
     end
 
 
