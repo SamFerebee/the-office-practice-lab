@@ -19,53 +19,53 @@ _Keep in mind that in order to properly build out the relationships between the 
 ​
 ### **`Manager`**
   * Manager is initialized with a name, department and age. All of these attributes can change.
-  * `Manager#name`
+  * done `Manager#name`
     * returns a `String` that is the manager's name
-  * `Manager#department`
+  * done `Manager#department`
     * returns a `String` that is the department that the manager oversees
-  * `Manager#age`
+  * done `Manager#age`
     * returns a `Fixnum` that is the age of the manager
-  * `Manager#employees`
+  * done `Manager#employees`
     * returns an `Array` of all the employees that the manager oversees
-  * `Manager#roles`
+  * done `Manager#roles`
     * returns an `Array` of all the roles that the manager oversees
-  * `Manager.all`
+  * done `Manager.all`
     * returns an `Array` of all the managers
-  * `Manager.all_departments`
+  * done `Manager.all_departments`
     * returns an `Array` of all the department names that every manager oversees without repetitions
-  * `Manager.average_age`
+  * done `Manager.average_age`
     * returns a `Float` that is the average age of all the managers
 ​
 ### **`Employee`**
   * Employee is initialized with a name and salary. All of these attributes can change.
-  * `Employee#name`
+  * done`Employee#name`
     * returns a `String` that is the employee's name
-  * `Employee#salary`
+  * done`Employee#salary`
     * returns a `Fixnum` that is the employee's salary
-  * `Employee#manager`
+  * done `Employee#manager`
     * returns an instance of their manager
-  * `Employee#role`
+  * done `Employee#role`
     * returns an instance of their role
-  * `Employee.all`
+  * done `Employee.all`
     * returns an `Array` of all the employees
-  * `Employee.paid_over`
+  * done `Employee.paid_over`
     * takes a `Fixnum` argument and returns an `Array` of all the employees whose salaries are over that amount
-  * `Employee.find_by_department`
+  * done `Employee.find_by_department`
     * takes a `String` argument that is the name of a department and returns the first employee whose manager is working in that department
-  * `Employee.search_by_role`
+  * done `Employee.search_by_role`
     * takes a `String` argument that is the name of a role and returns all the employees who work at that role
-  * `Employee#get_promoted`
+  * done `Employee#get_promoted`
     * takes an argument of an instance of a Role, updates Employee's role and increases Employee's salary.
 ​
 ### **`Role`**
   * Role is initialized with a name, which won't ever change.
-  * `Role#name`
+  * done `Role#name`
     * returns a `String` that is the role's name
-  * `Role#employees`
+  * done `Role#employees`
     * returns an array of all the Employees who work at that role
-  * `Role#managers`
+  * done `Role#managers`
     * returns a unique array of all the Manager instances who oversee Employees at that role 
-  * `Role.all`
+  * done `Role.all`
     * returns an `Array` of all the roles
   * `Role#add_employee`
     * takes a `String` argument of an employee's name, a `Fixnum` argument of the employee's salary and an instance of a Manager class and creates a new employee who work at this role
